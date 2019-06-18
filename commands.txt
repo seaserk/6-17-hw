@@ -1,0 +1,18 @@
+Last login: Tue Jun 18 14:57:57 on ttys000
+Kyles-MacBook-Pro:~ kyleseaser$ cd star_wars
+Kyles-MacBook-Pro:star_wars kyleseaser$ tree
+.
+├── death_star
+│   ├── galaxy_far_far_away
+│   ├── princess_leia.txt
+│   ├── storm_trooper.txt
+│   └── tie_fighter_1
+│       └── darth_vater.txt
+└── galaxy_far_far_away
+    ├── ben_kenobi.txt
+    └── luke.txt
+
+3 directories, 6 files
+Kyles-MacBook-Pro:star_wars kyleseaser$ cd star_wars
+
+
