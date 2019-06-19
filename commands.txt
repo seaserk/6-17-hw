@@ -1,18 +1,202 @@
-Last login: Tue Jun 18 14:57:57 on ttys000
+Last login: Tue Jun 18 16:48:51 on ttys000
+Kyles-MacBook-Pro:~ kyleseaser$ pwd
+/Users/kyleseaser
+Kyles-MacBook-Pro:~ kyleseaser$ mkdir star_wars
 Kyles-MacBook-Pro:~ kyleseaser$ cd star_wars
-Kyles-MacBook-Pro:star_wars kyleseaser$ tree
+Kyles-MacBook-Pro:star_wars kyleseaser$ mkdir death_star
+Kyles-MacBook-Pro:star_wars kyleseaser$ cd death_star
+Kyles-MacBook-Pro:death_star kyleseaser$ touch darth_vader.txt princess_leia.txt storm_trooper.txt
+Kyles-MacBook-Pro:death_star kyleseaser$ cd ..
+Kyles-MacBook-Pro:star_wars kyleseaser$ mkdir galaxy_far_far_away
+Kyles-MacBook-Pro:star_wars kyleseaser$ cd galaxy_far_far_away/
+Kyles-MacBook-Pro:galaxy_far_far_away kyleseaser$ mkdir tatooine
+Kyles-MacBook-Pro:galaxy_far_far_away kyleseaser$ cd tatooine/
+Kyles-MacBook-Pro:tatooine kyleseaser$ touch luke.txt ben_kenobi
+Kyles-MacBook-Pro:tatooine kyleseaser$ mkdir millenium_falcon
+Kyles-MacBook-Pro:tatooine kyleseaser$ cd millenium_falcon/
+Kyles-MacBook-Pro:millenium_falcon kyleseaser$ touch han_solo.txt chewbaca.txt
+Kyles-MacBook-Pro:millenium_falcon kyleseaser$ cd ..
+Kyles-MacBook-Pro:tatooine kyleseaser$ ls
+ben_kenobi		luke.txt		millenium_falcon
+Kyles-MacBook-Pro:tatooine kyleseaser$ touch ben_kenobi.txt
+Kyles-MacBook-Pro:tatooine kyleseaser$ ls
+ben_kenobi		luke.txt
+ben_kenobi.txt		millenium_falcon
+Kyles-MacBook-Pro:tatooine kyleseaser$ rm ben_kenobi
+Kyles-MacBook-Pro:tatooine kyleseaser$ ls
+ben_kenobi.txt		luke.txt		millenium_falcon
+Kyles-MacBook-Pro:tatooine kyleseaser$ mv ben_kenobi.txt obi_wan.txt
+Kyles-MacBook-Pro:tatooine kyleseaser$ ls
+luke.txt		millenium_falcon	obi_wan.txt
+Kyles-MacBook-Pro:tatooine kyleseaser$ cd ..
+Kyles-MacBook-Pro:galaxy_far_far_away kyleseaser$ cd ..
+Kyles-MacBook-Pro:star_wars kyleseaser$ ls
+death_star		galaxy_far_far_away
+Kyles-MacBook-Pro:star_wars kyleseaser$ cd death_star/
+Kyles-MacBook-Pro:death_star kyleseaser$ cp storm_trooper.txt tatooine
+Kyles-MacBook-Pro:death_star kyleseaser$ cd tatooine 
+-bash: cd: tatooine: Not a directory
+Kyles-MacBook-Pro:death_star kyleseaser$ cd ..
+Kyles-MacBook-Pro:star_wars kyleseaser$ cd tatooine
+-bash: cd: tatooine: No such file or directory
+Kyles-MacBook-Pro:star_wars kyleseaser$ cd galaxy_far_far_away/
+Kyles-MacBook-Pro:galaxy_far_far_away kyleseaser$ ls
+tatooine
+Kyles-MacBook-Pro:galaxy_far_far_away kyleseaser$ cd tatooine/
+Kyles-MacBook-Pro:tatooine kyleseaser$ ls
+luke.txt		millenium_falcon	obi_wan.txt
+Kyles-MacBook-Pro:tatooine kyleseaser$ man mv
+Kyles-MacBook-Pro:tatooine kyleseaser$ mv luke.txt millenium_falcon/
+Kyles-MacBook-Pro:tatooine kyleseaser$ ls
+millenium_falcon	obi_wan.txt
+Kyles-MacBook-Pro:tatooine kyleseaser$ mv obi_wan.txt millenium_falcon/
+Kyles-MacBook-Pro:tatooine kyleseaser$ ls
+millenium_falcon
+Kyles-MacBook-Pro:tatooine kyleseaser$ mv millenium_falcon galaxy_far_far_away/
+Kyles-MacBook-Pro:tatooine kyleseaser$ ls
+galaxy_far_far_away
+Kyles-MacBook-Pro:tatooine kyleseaser$ mv galaxy_far_far_away millenium_falcon
+Kyles-MacBook-Pro:tatooine kyleseaser$ ls
+millenium_falcon
+Kyles-MacBook-Pro:tatooine kyleseaser$ mv millenium_falcon/ <death_star>
+-bash: syntax error near unexpected token `newline'
+Kyles-MacBook-Pro:tatooine kyleseaser$ pwd
+/Users/kyleseaser/star_wars/galaxy_far_far_away/tatooine
+Kyles-MacBook-Pro:tatooine kyleseaser$ ls
+millenium_falcon
+Kyles-MacBook-Pro:tatooine kyleseaser$ mv /users/kyleseaser/star_wars/galaxy_far_far_away/tatooine/millenium_falcon /users/kyleseaser/star_wars/galaxy_far_far_away/
+Kyles-MacBook-Pro:tatooine kyleseaser$ ls
+Kyles-MacBook-Pro:tatooine kyleseaser$ cd ..
+Kyles-MacBook-Pro:galaxy_far_far_away kyleseaser$ mv /users/kyleseaser/star_wars/galaxy_far_far_away/millenium_falcon /users/kyleseaser/star_wars/galaxy_far_far_away/death_star
+Kyles-MacBook-Pro:galaxy_far_far_away kyleseaser$ ls
+death_star	tatooine
+Kyles-MacBook-Pro:galaxy_far_far_away kyleseaser$ pwd
+/Users/kyleseaser/star_wars/galaxy_far_far_away
+Kyles-MacBook-Pro:galaxy_far_far_away kyleseaser$ mv princess_leia.txt /millenium_falcon/
+mv: rename princess_leia.txt to /millenium_falcon/: No such file or directory
+Kyles-MacBook-Pro:galaxy_far_far_away kyleseaser$ rm obi_wan.txt
+rm: obi_wan.txt: No such file or directory
+Kyles-MacBook-Pro:galaxy_far_far_away kyleseaser$ pwd
+/Users/kyleseaser/star_wars/galaxy_far_far_away
+Kyles-MacBook-Pro:galaxy_far_far_away kyleseaser$ cd death_star
+Kyles-MacBook-Pro:death_star kyleseaser$ mv princess_leia.txt /millenium_falcon/
+mv: rename princess_leia.txt to /millenium_falcon/: No such file or directory
+Kyles-MacBook-Pro:death_star kyleseaser$ rm obi_wan.txt
+Kyles-MacBook-Pro:death_star kyleseaser$ ls
+chewbaca.txt	han_solo.txt	luke.txt
+Kyles-MacBook-Pro:death_star kyleseaser$ cd ..
+Kyles-MacBook-Pro:galaxy_far_far_away kyleseaser$ mkdir yavin_4
+Kyles-MacBook-Pro:galaxy_far_far_away kyleseaser$ cd yavin_4
+Kyles-MacBook-Pro:yavin_4 kyleseaser$ touch x_wing
+Kyles-MacBook-Pro:yavin_4 kyleseaser$ mv luke.txt /x_wing/
+mv: rename luke.txt to /x_wing/: No such file or directory
+Kyles-MacBook-Pro:yavin_4 kyleseaser$ cd death_star
+-bash: cd: death_star: No such file or directory
+Kyles-MacBook-Pro:yavin_4 kyleseaser$ cd ..
+Kyles-MacBook-Pro:galaxy_far_far_away kyleseaser$ cd death_star/
+Kyles-MacBook-Pro:death_star kyleseaser$ ls
+chewbaca.txt	han_solo.txt	luke.txt
+Kyles-MacBook-Pro:death_star kyleseaser$ pwd
+/Users/kyleseaser/star_wars/galaxy_far_far_away/death_star
+Kyles-MacBook-Pro:death_star kyleseaser$ mv /users/kyleseaser/star_wars/galaxy_far_far_away/death_star/luke.txt /users/kyleseaser/star_wars/galaxy_far_far_away/yavin_4/x_wing/
+mv: rename /users/kyleseaser/star_wars/galaxy_far_far_away/death_star/luke.txt to /users/kyleseaser/star_wars/galaxy_far_far_away/yavin_4/x_wing/: Not a directory
+Kyles-MacBook-Pro:death_star kyleseaser$ mkdir tie_fighter_1 tie_fighter_2 tie_fighter_3
+Kyles-MacBook-Pro:death_star kyleseaser$ tree
+.
+├── chewbaca.txt
+├── han_solo.txt
+├── luke.txt
+├── tie_fighter_1
+├── tie_fighter_2
+└── tie_fighter_3
+
+3 directories, 3 files
+Kyles-MacBook-Pro:death_star kyleseaser$ cd ..
+Kyles-MacBook-Pro:galaxy_far_far_away kyleseaser$ tree
 .
 ├── death_star
-│   ├── galaxy_far_far_away
-│   ├── princess_leia.txt
-│   ├── storm_trooper.txt
-│   └── tie_fighter_1
-│       └── darth_vater.txt
-└── galaxy_far_far_away
-    ├── ben_kenobi.txt
-    └── luke.txt
+│   ├── chewbaca.txt
+│   ├── han_solo.txt
+│   ├── luke.txt
+│   ├── tie_fighter_1
+│   ├── tie_fighter_2
+│   └── tie_fighter_3
+├── tatooine
+└── yavin_4
+    └── x_wing
 
-3 directories, 6 files
-Kyles-MacBook-Pro:star_wars kyleseaser$ cd star_wars
+6 directories, 4 files
+Kyles-MacBook-Pro:galaxy_far_far_away kyleseaser$ cd death_star/
+Kyles-MacBook-Pro:death_star kyleseaser$ touch darth_vader.txt
+Kyles-MacBook-Pro:death_star kyleseaser$ pwd
+/Users/kyleseaser/star_wars/galaxy_far_far_away/death_star
+Kyles-MacBook-Pro:death_star kyleseaser$ mv /users/kyleseaser/star_wars/galaxy_far_far_away/death_star/darth_vader.txt /users/kyleseaser/star_wars/galaxy_far_far_away/death_star/tie_fighter_1/
+Kyles-MacBook-Pro:death_star kyleseaser$ ls
+chewbaca.txt	luke.txt	tie_fighter_2
+han_solo.txt	tie_fighter_1	tie_fighter_3
+Kyles-MacBook-Pro:death_star kyleseaser$ cp storm_trooper.txt tie_fighter_2
+cp: storm_trooper.txt: No such file or directory
+Kyles-MacBook-Pro:death_star kyleseaser$ touch storm_trooper.txt
+Kyles-MacBook-Pro:death_star kyleseaser$ cp storm_trooper.txt tie_fighter_2
+Kyles-MacBook-Pro:death_star kyleseaser$ cp storm_trooper.txt tie_fighter_3
+Kyles-MacBook-Pro:death_star kyleseaser$ pwd
+/Users/kyleseaser/star_wars/galaxy_far_far_away/death_star
+Kyles-MacBook-Pro:death_star kyleseaser$ mv /users/kyleseaser/star_wars/galaxy_far_far_away/death_star/tie_fighter_2 /users/kyleseaser/star_wars/galaxy_far_far_away/
+Kyles-MacBook-Pro:death_star kyleseaser$ ls
+chewbaca.txt		luke.txt		tie_fighter_1
+han_solo.txt		storm_trooper.txt	tie_fighter_3
+Kyles-MacBook-Pro:death_star kyleseaser$ mv /users/kyleseaser/star_wars/galaxy_far_far_away/death_star/tie_fighter_1 /users/kyleseaser/star_wars/galaxy_far_far_away/
+Kyles-MacBook-Pro:death_star kyleseaser$ mv /users/kyleseaser/star_wars/galaxy_far_far_away/death_star/tie_fighter_3 /users/kyleseaser/star_wars/galaxy_far_far_away/
+Kyles-MacBook-Pro:death_star kyleseaser$ cd ..
+Kyles-MacBook-Pro:galaxy_far_far_away kyleseaser$ rm tie_fighter_2 tie_fighter_3
+rm: tie_fighter_2: is a directory
+rm: tie_fighter_3: is a directory
+Kyles-MacBook-Pro:galaxy_far_far_away kyleseaser$ rm -d tie_fighter_2 tie_fighter_3
+rm: tie_fighter_2: Directory not empty
+rm: tie_fighter_3: Directory not empty
+Kyles-MacBook-Pro:galaxy_far_far_away kyleseaser$ rm -r tie_fighter_2 tie_fighter_3
+Kyles-MacBook-Pro:galaxy_far_far_away kyleseaser$ cd ..
+Kyles-MacBook-Pro:star_wars kyleseaser$ cd yavin_4
+-bash: cd: yavin_4: No such file or directory
+Kyles-MacBook-Pro:star_wars kyleseaser$ cd galaxy_far_far_away/
+Kyles-MacBook-Pro:galaxy_far_far_away kyleseaser$ cd yavin_4/
+Kyles-MacBook-Pro:yavin_4 kyleseaser$ cd x_wing 
+-bash: cd: x_wing: Not a directory
+Kyles-MacBook-Pro:yavin_4 kyleseaser$ mkdir x_wing 
+mkdir: x_wing: File exists
+Kyles-MacBook-Pro:yavin_4 kyleseaser$ tree
+.
+└── x_wing
 
-
+0 directories, 1 file
+Kyles-MacBook-Pro:yavin_4 kyleseaser$ cd ..
+Kyles-MacBook-Pro:galaxy_far_far_away kyleseaser$ cd x_wing
+-bash: cd: x_wing: No such file or directory
+Kyles-MacBook-Pro:galaxy_far_far_away kyleseaser$ ls
+death_star	tatooine	tie_fighter_1	yavin_4
+Kyles-MacBook-Pro:galaxy_far_far_away kyleseaser$ cd_yavin_4
+-bash: cd_yavin_4: command not found
+Kyles-MacBook-Pro:galaxy_far_far_away kyleseaser$ cd yavin_4
+Kyles-MacBook-Pro:yavin_4 kyleseaser$ cd x_wing 
+-bash: cd: x_wing: Not a directory
+Kyles-MacBook-Pro:yavin_4 kyleseaser$ rm x_wing
+Kyles-MacBook-Pro:yavin_4 kyleseaser$ ls
+Kyles-MacBook-Pro:yavin_4 kyleseaser$ mkdir x_wing
+Kyles-MacBook-Pro:yavin_4 kyleseaser$ cd x_wing/
+Kyles-MacBook-Pro:x_wing kyleseaser$ touch the_force.txt
+Kyles-MacBook-Pro:x_wing kyleseaser$ cd ..
+Kyles-MacBook-Pro:yavin_4 kyleseaser$ cd ..
+Kyles-MacBook-Pro:galaxy_far_far_away kyleseaser$ cd death_star/
+Kyles-MacBook-Pro:death_star kyleseaser$ rm -r death_star
+rm: death_star: No such file or directory
+Kyles-MacBook-Pro:death_star kyleseaser$ ls
+chewbaca.txt		luke.txt
+han_solo.txt		storm_trooper.txt
+Kyles-MacBook-Pro:death_star kyleseaser$ pwd
+/Users/kyleseaser/star_wars/galaxy_far_far_away/death_star
+Kyles-MacBook-Pro:death_star kyleseaser$ cd ..
+Kyles-MacBook-Pro:galaxy_far_far_away kyleseaser$ rm -r death_star/
+Kyles-MacBook-Pro:galaxy_far_far_away kyleseaser$ cd yavin_4/
+Kyles-MacBook-Pro:yavin_4 kyleseaser$ ls
+x_wing
+Kyles-MacBook-Pro:yavin_4 kyleseaser$ 
